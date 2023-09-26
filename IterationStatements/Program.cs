@@ -6,6 +6,9 @@ namespace IterationStatements
 {
     public class Program
     {
+
+         
+        
         //LukeWarm Section: Create methods below
         //Write a method that will print to the console all numbers 1000 through - 1000
         public static void PrintOneThousand() 
@@ -75,7 +78,7 @@ namespace IterationStatements
         //Write a method to read the age of a candidate and determine whether they can vote.
         //Hint: Use Parse or the safer TryParse() for an extra challenge
         //Parse()
-        //TryParse()
+        
         public static void VotingAge(string userAge)
         { 
             if (int.Parse(userAge) < 18)
@@ -88,6 +91,22 @@ namespace IterationStatements
                 Console.WriteLine("Welcome to voter registration!");
             }
         }
+        //TryParse()
+        //public static void VotingAge(string userAge)
+        //{
+        //    int parsedUserAge = 0;
+        //    bool numEntry = int.TryParse(userAge, out parsedUserAge);
+        //    if (parsedUserAge >= 18 && numEntry)
+        //    {
+        //        var timeTillAge = 18 - int.Parse(userAge);
+        //        Console.WriteLine($"I am sorry, you are not 18 yet. Please try back again in about {timeTillAge} years!");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Welcome to voter registration!");
+        //    }
+        //}
+
         //Heatin Up Section:
         //Write a method to check if an integer(from the user) is in the range -10 to 10
         public static void BetweenParameters(int selectedNum)
@@ -115,6 +134,14 @@ namespace IterationStatements
         //Call the methods to test them in the Main method below
         static void Main(string[] args)
         {
+            // so instructors can see I can do exercise 1...
+
+            for (var i = 0; i > 15; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+
+
             PrintOneThousand();            
 
             PrintByThrees();
